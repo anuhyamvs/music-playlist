@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Music Playlist Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Music Playlist Visualizer</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input type="text" id="search" placeholder="🔍 Search...">
+      <div class="add-row">
+        <input type="text" id="title" placeholder="Song Title">
+        <input type="text" id="artist" placeholder="Artist">
+        <input type="text" id="duration" placeholder="Duration (mm:ss)">
+        <button id="addBtn">➕ Add Song</button>
+      </div>
+
+      <div class="playback-row">
+        <button id="prevBtn">⏮ Previous</button>
+        <button id="nextBtn">⏭ Next</button>
+        <button id="undoBtn">↩️ Undo</button>
+        <button id="redoBtn">↪️ Redo</button>
+      </div>
+
+      <div class="filter-row">
+        <button id="mostPlayedBtn">🔥 Most Played</button>
+        <button id="recentlyPlayedBtn">🕒 Recently Played</button>
+        <button id="allBtn">🎵 All Songs</button>
+      </div>
+
+      <div class="io-row">
+        <button id="exportBtn">⬇️ Export JSON</button>
+        <button id="importBtn">⬆️ Import JSON</button>
+        <input id="importFile" type="file" accept="application/json" style="display:none">
+      </div>
+    </section>
+
+    <section class="playlist" id="playlist" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

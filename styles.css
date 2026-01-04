@@ -1,0 +1,18 @@
+/* Basic layout and polish extracted from original file. */
+body { font-family: "Segoe UI", sans-serif; text-align: center; background: linear-gradient(135deg,#f4f4f9,#e8eaf6); margin:0; padding:20px; }
+header h1 { color:#333; margin:0 0 18px 0; }
+.controls { max-width:960px; margin:0 auto 12px; }
+.controls input[type="text"]{ padding:8px; margin:6px 6px 6px 0; border-radius:6px; border:1px solid #bbb; outline:none; }
+.add-row{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:8px; }
+.playback-row, .filter-row{ margin-top:10px; }
+button{ padding:8px 12px; margin:4px; border:none; border-radius:8px; background:#4CAF50; color:white; font-size:14px; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.12); transition:transform .12s ease, box-shadow .12s ease; }
+button:hover{ transform:translateY(-2px); box-shadow:0 6px 12px rgba(0,0,0,0.12); }
+button:active{ transform:translateY(0); }
+.delete-btn{ background:#e74c3c; font-size:12px; padding:4px 8px; border-radius:6px; }
+.playlist{ margin-top:20px; display:block; max-width:700px; margin-left:auto; margin-right:auto; text-align:left; }
+.alphabet{ font-size:12px; font-weight:bold; color:#555; margin-top:12px; }
+.song{ padding:10px 12px; border-bottom:1px solid #eee; display:flex; justify-content:space-between; align-items:center; background:#fff; border-radius:8px; margin:6px 0; transition:background .18s ease, transform .12s ease; }
+.song:hover{ transform:translateY(-2px); background:#f7fff0; }
+.current{ background:#ffeb3b !important; box-shadow:0 4px 12px rgba(250,200,30,0.18); }
+.empty-message{ font-size:14px; color:#666; margin:10px 0; font-style:italic; text-align:center; }
+@media (max-width:640px){ .add-row{ flex-direction:column; align-items:stretch; } .playlist{ padding:0 12px; } }
